@@ -1,12 +1,24 @@
 import socket
+import argparse
 
  
 
-msgFromClient       = "Hello UDP Server"
+
+parser = argparse.ArgumentParser(description="Simple File image import")
+    
+parser.add_argument("filen", help="Image file name")
+
+
+args = parser.parse_args()
+    
+filen = args.filen
+
+
+msgFromClient       = filen # image name - for example image.jpeg 
 
 bytesToSend         = str.encode(msgFromClient)
 
-serverAddressPort   = ("10.27.0.41", 12345)
+serverAddressPort   = ("10.27.0.42", 12345)
 
 bufferSize          = 1024
 
