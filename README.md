@@ -28,13 +28,4 @@ python3 ClientSimple.py
 python3 ServerSimple.py
 ```
 
-## How to establish the communication 
-
-| Name | Testing|
-| ------ | ------ |
-| Server |  python3 ServerSimple.py  |
-| Client |  python3 ClientSimple.py  |
-| Import image |  python3 img.py  |
-
-
 
